@@ -58,7 +58,7 @@ def loop():
 
     enemy_f_speed=9 #Define a velocidade dos inimigos caindo
 
-    enemy=0 #set starting stage for the enemy car 
+    enemy=0 #definir estágio inicial para o inimigo
     enemy_startx=random.randrange(130,(700-capy_width)) #Para os inimigos aparecerem aleatoriamente
     enemy_starty=-600 #Inimigos virão com eixo y em negativo pois estão vindo do lado oposto
     # Define o tamanho dos inimigos
