@@ -102,12 +102,12 @@ def loop():
             crash()
         #Define quão longe os inimigos irão
         if enemy_starty>600:
-            #Só um carro irá cair de uma vez
+            #Só um inimigo irá cair de uma vez
             enemy_starty=0-enemy_height 
             #Outros inimigos irão vir
             enemy_startx=random.randrange(130,(1000-300)) 
             #Define quantos inimigos virão
-            enemy=random.randrange(0,2)   
+            enemy=random.randrange(0,3)   
         if y<enemy_starty+enemy_height:
             if x > enemy_startx and x < enemy_startx + enemy_width or x + capy_width > enemy_startx and x + capy_width < enemy_startx + enemy_width :
                 crash()   
