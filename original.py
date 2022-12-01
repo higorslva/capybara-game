@@ -6,7 +6,7 @@ pygame.init()
 gray=(60,60,60)
 black=(255,0,0) 
 display=pygame.display.set_mode((830,600)) #Tamanho da janela
-pygame.display.set_caption("Capivara game by Higoru (i)Ltda") #Nome da janela
+pygame.display.set_caption("Capivara game (i)Ltda") #Nome da janela
 capyimg=pygame.image.load("./sprites/capivara.png") #Carrega sprite da capivara
 backgroundleft=pygame.image.load("./sprites/left.png") #Sprite do lado direito
 backgroundright=pygame.image.load("./sprites/right.png") #Sprite do lado esquerdo
