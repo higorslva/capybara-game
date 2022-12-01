@@ -1,7 +1,9 @@
 import pygame #Biblioteca pygame
 import time   #Para reiniciar o jogo
 import random #Para deixar os inimigos aleatórios
+
 pygame.init() 
+pygame.mixer.init()
 #Cores em RGB
 gray=(60,60,60)
 black=(255,0,0) 
@@ -10,6 +12,8 @@ pygame.display.set_caption("Capivara game (i)Ltda") #Nome da janela
 capyimg=pygame.image.load("./sprites/capivara.png") #Carrega sprite da capivara
 backgroundleft=pygame.image.load("./sprites/left.png") #Sprite do lado direito
 backgroundright=pygame.image.load("./sprites/right.png") #Sprite do lado esquerdo
+music = 'music.mp3'
+
 capy_width=23 #Tamanho da capivara
 
 #define as funções do inimigo que vem do lado oposto(inimigo_f)
@@ -55,7 +59,8 @@ def loop():
 
     x_change=0
     y_change=0
-
+    pygame.mixer.music.load(music)
+    pygame.mixer.music.play()
     enemy_f_speed=9 #Define a velocidade dos inimigos caindo
 
     enemy=0 #definir estágio inicial para o inimigo
